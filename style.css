@@ -1,0 +1,74 @@
+body {
+    margin: 120px;
+}
+
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.currency-select {
+    position: relative;
+    display: inline-block;
+}
+
+.select {
+    appearance: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.select-open .arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 740px;
+
+}
+
+.button-group {
+    display: flex;
+    gap: 8px
+}
+
+.button {
+    border-radius: 24px;
+    border: none;
+    color: #747474;
+    padding: 8px 16px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.active-btn {
+    color: white;
+    background-color: #122533;
+}
+
+.canvas-container-item {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Candlestick Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flex-group">
+    <div class="currency-select">
+        <select id="currencySelect" class="select">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="LTC">LTC</option>
+            <option value="DOGE">DOGE</option>
+        </select>
+    </div>
+    <div class="button-group">
+        <button data-int="1d" class="button">
+            Weekly
+        </button>
+        <button data-int="1w" class="button">
+            Monthly
+        </button>
+        <button data-int="1M" class="button active-btn">
+            Yearly
+        </button>
+    </div>
+</div>
+<div class="canvas-container">
+    <canvas id="candlestickChart"></canvas>
+    <div class="canvas-container-item">
+        <span class="canvas-container-item_span"></span>
+        <span class="canvas-container-item_span"></span>
+        <span class="canvas-container-item_span"></span>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
