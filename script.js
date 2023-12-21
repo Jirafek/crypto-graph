@@ -24,10 +24,11 @@ currencySelect.addEventListener('change', async function () {
 async function fetchData() {
     const apiUrl = `https://api2-1.bybit.com/spot/api/quote/v2/klines?symbol=301.${selectedCurrency}USDT&interval=${selectedInterval}&limit=1000&r=1703048575924`;
 
-    const headers = new Headers();
-    headers.append('Access-Control-Allow-Origin', '*');
-
-    const response = await fetch(apiUrl, { headers });
+    const response = await fetch(apiUrl, {
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
+    });
     const data = await response.json();
     return data.result;
 }
@@ -100,8 +101,6 @@ async function updateChart() {
 
         monthesData = ['', startMonthDate.toLocaleString('en-US', { month: 'long' }), ''];
     }
-
-    console.log(monthesData, selectedInterval);
 
     spans.forEach((span, index) => {
         span.innerText = monthesData[index] || '';

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Candlestick Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="flex-group">
+    <div class="flex-group-item">
+        <div class="flex-group-item_title">
+            <img src="./images/BTC.svg" />
+            <div class="flex-group-item_title-text">
+                <p class="flex-group-item_title-text-full">
+                    Bitcoin
+                </p>
+                <p class="flex-group-item_title-text-short">
+                    BTC
+                </p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="candlestickChart"></canvas>
+        </div>
+        <div class="flex-group-item_footer">
+            <h5 class="flex-group-item_footer-value"></h5>
+            <div class="flex-group-item_footer-percent"></div>
+        </div>
+    </div>
+    <div class="flex-group-item">
+        <div class="flex-group-item_title">
+            <img src="./images/ETH.svg" />
+            <div class="flex-group-item_title-text">
+                <p class="flex-group-item_title-text-full">
+                    Ethereum
+                </p>
+                <p class="flex-group-item_title-text-short">
+                    ETH
+                </p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="candlestickChart"></canvas>
+        </div>
+        <div class="flex-group-item_footer">
+            <h5 class="flex-group-item_footer-value"></h5>
+            <div class="flex-group-item_footer-percent"></div>
+        </div>
+    </div>
+    <div class="flex-group-item">
+        <div class="flex-group-item_title">
+            <img src="./images/LTE.svg" />
+            <div class="flex-group-item_title-text">
+                <p class="flex-group-item_title-text-full">
+                    Litecoin
+                </p>
+                <p class="flex-group-item_title-text-short">
+                    LTE
+                </p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="candlestickChart"></canvas>
+        </div>
+        <div class="flex-group-item_footer">
+            <h5 class="flex-group-item_footer-value"></h5>
+            <div class="flex-group-item_footer-percent"></div>
+        </div>
+    </div>
+    <div class="flex-group-item">
+        <div class="flex-group-item_title">
+            <img src="./images/DOGE.svg" />
+            <div class="flex-group-item_title-text">
+                <p class="flex-group-item_title-text-full">
+                    Doge Coin
+                </p>
+                <p class="flex-group-item_title-text-short">
+                    DOGE
+                </p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="candlestickChart"></canvas>
+        </div>
+        <div class="flex-group-item_footer">
+            <h5 class="flex-group-item_footer-value"></h5>
+            <div class="flex-group-item_footer-percent"></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+<script type="module" src="script.js" defer></script>
+</body>
+</html>

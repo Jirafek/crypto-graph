@@ -1,0 +1,14 @@
+body {
+    padding: 120px;
+    background-color: #030D14;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+}
