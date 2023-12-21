@@ -1,7 +1,5 @@
 const currencys = ['BTC', 'ETH', 'LTE', 'DOGE'];
 
-import allData from './constants.js';
-
 async function fetchData(selectedCurrency) {
     const apiUrl = `https://api2-1.bybit.com/spot/api/quote/v2/klines?symbol=301.${selectedCurrency}USDT&interval=1M&limit=1000&r=1703048575924`;
 
